@@ -1,17 +1,17 @@
 <?php
 
 
-// require_once 'robot.php';
 
-$robot1 = new robot;
-$robot2 = new robot;
 
-$robot1->set_suara('ngik ngik ngok');
-$robot1->set_suara('ngik ngik ngok nguk');
-echo 'bunyinya..' . $robot1->get_suara();
+require_once 'robot.php';
 
-$robot2->set_suara('tik tok tik tok');
-echo 'bunyinya..' . $robot2->get_suara();
+$robot1 = new robot('ngik ngik ngok',20);
+$robot1->set_berat(30);
+echo 'beratnya..' . $robot1->get_berat(),'<br>';
+
+$robothewan = new robot_hewan('hoaxxxx',10);
+echo $robothewan->get_kekuatan();
+
 
 
 ?>
