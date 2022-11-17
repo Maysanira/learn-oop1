@@ -7,7 +7,7 @@ class robot{
     public $suara;
     public $berat;
 
-// konstruktor
+// konstruktor= apapun objeknya pasti dipanggil pertama kali
 public function __contruct($suara,$berat){
     $this->suara = $suara;
     $this->berat = $berat;
@@ -17,14 +17,20 @@ public function __contruct($suara,$berat){
 // metode set && metode get
 
 public function set_suara($suara){//set untuk men setting
-$this->suara = $suara;
+    $this->suara = $suara;
     }
 
 public function get_suara(){//get untuk mengambil
     return $this->suara;
     }
+public function set_berat($berat){//set untuk men setting
+    $this->berat = $berat;
+    }
 public function get_berat(){//get untuk mengambil
     return $this->berat;
+    }
+    public function __toString(){
+        echo 'ini adalah kelas';
     }
 }
 
